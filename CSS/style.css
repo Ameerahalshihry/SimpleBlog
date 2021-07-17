@@ -1,0 +1,28 @@
+#navbar {
+    background-color: rgb(24, 6, 114);
+}
+.nav-link {
+    color: rgb(235, 221, 196);
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active{
+    color: gray;
+}
+.footer{
+    background-color: rgb(24, 6, 114);
+    color: rgb(235, 221, 196);
+}
+.btn-primary{
+    background-color: rgb(24, 6, 114);
+    border:none;
+    color: rgb(235, 221, 196);
+}
+.btn-primary:hover{
+    background-color: gray;
+    color:rgb(24, 6, 114);
+}
+.btn-primary:focus{
+    background-color:gray;
+    color:rgb(24, 6, 114);
+}

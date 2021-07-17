@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <!-- <a href="emailto:ameerah@hotmail.com">gg</a> -->
+    <!-- navigation bar -->
+    <div class="container-fluid">
+        <div class="row" id="navbar">
+            <div class="col" id="icon">
+                <a href="#"> 
+                    <img src="https://via.placeholder.com/50" alt="">
+                </a>
+            </div>
+            <div class="col">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- blog container -->
+    <div class="container">
+        <div class="row" id="post-container">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card m-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">written by <em>Gorge Mickle..</em></h6>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos, officia, iusto odio totam aspernatur obcaecati maiores commodi exercitationem possimus voluptates fuga facilis unde. Beatae eaque harum pariatur repellendus adipisci.</p>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card m-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">written by <em>Ameerah Alshehri..</em></h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi laudantium facere velit assumenda quae quidem in natus repellat, obcaecati nemo, similique possimus explicabo atque voluptate! Harum voluptas ea minima!</p>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card m-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">written by <em>Gorge Mickle..</em></h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi laudantium facere velit assumenda quae quidem in natus repellat, obcaecati nemo, similique possimus explicabo atque voluptate! Harum voluptas ea minima!</p>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card m-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">written by <em>Gorge Mickle..</em></h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi laudantium facere velit assumenda quae quidem in natus repellat, obcaecati nemo, similique possimus explicabo atque voluptate! Harum voluptas ea minima!</p>
+                        <a href="#" class="card-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- add new post -->
+    <div class="row">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add New Post
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="post-title" placeholder="Post Title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="post-body" style="height: 300px"></textarea>
+                                <label for="floatingTextarea2">Post Body</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="post-author" placeholder="Post Author">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="add-post">ADD POST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container m-4 p-4">
+            <p class="text-center">
+                copy right &copy; All Rights are Reserved.
+            </p>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
